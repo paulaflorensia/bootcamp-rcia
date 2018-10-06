@@ -1,0 +1,44 @@
+/*-------------------------------------------------- 
+/* General
+/*-------------------------------------------------- */
+
+body{
+	background-color: #f5f5f5;
+	text-align: center;
+	text-align: -webkit-center;
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*----- HEADER -----*/
+
+body > header{
+	text-align: center;
+}
+
+header h1{
+	font-size: 40px;
+	color: #B52323;
+}
+
+/*----- FOOTER -----*/
+
+body > footer{
+	text-align: center;
+}
+
+footer p{
+	color: #aaa;
+}
+
+/*-------------------------------------------------- 
+/* Content
+/*-------------------------------------------------- */
+
+#magazine{
+	background-image: url("amazingklef4.jpg");
+	background-color: #cccccc;
+	background-size: contain;
+
+	width: 348px;
+	height: 492.5px;
+}
