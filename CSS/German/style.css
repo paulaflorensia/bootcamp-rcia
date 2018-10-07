@@ -66,7 +66,7 @@ footer p{
 }
 
 #magazine > article{
-	background-color: rgba(0,0,255,0.5); /*delete after define layout*/
+	/*background-color: rgba(0,0,255,0.5); delete after define layout*/
 
 	height: 357.5px;
 	width: 100%;
@@ -150,4 +150,19 @@ footer p{
 
 	top: -5px;
 	left: 92px;
+}
+
+/*----- Content ARTICLE ----- */
+
+#magazine > article h2{
+	color: white;
+	font-size: 16px;
+	text-shadow: -1px -2px rgba(100,100,100,0.5);
+}
+
+.ycee{
+	color: #faec07;
+	text-shadow: -1px -2px rgba(0,0,0,0.5);
+	font-size: 64px;
+	line-height: 75%;
 }
