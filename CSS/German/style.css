@@ -22,6 +22,24 @@
 
 }
 
+@font-face {
+    font-family: 'coresansnscw01-93-xblack';
+    src: url('font/Core-Sans-N-SC-W01-93-XBlack.woff2') format('woff2'),
+         url('font/Core-Sans-N-SC-W01-93-XBlack.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'core_sans_n_sc_w01_55_medium-webfont';
+    src: url('font/core_sans_n_sc_w01_55_medium-webfont.woff2') format('woff2'),
+         url('font/core_sans_n_sc_w01_55_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /*----- OTHER -----*/
 
 body{
@@ -181,26 +199,29 @@ footer p{
 }
 
 .aright{
+	font-family: 'coresansnscw01-93-xblack';
 	color: white;
 	text-transform: uppercase;
 	line-height: 100%;
 
-	width: 30%;
+	width: 34%;
 	position: relative;
 	float: right;
 	margin-right:20px;
 
-	font-weight: bold;
-	font-size: 10px;
+	font-size: 8px;
 
-	top: 60px;
+	top: 85px;
 	text-align: right;
 }
 
+.aright p{
+	margin: 12px 0px;
+}
+
 .aside-title{
-	font-size: 14px;
+	font-size: 12px;
 	color: #1e1d2d;
-	font-weight: bolder;
 }
 
 .aside-plus{
