@@ -1,0 +1,66 @@
+body  {
+    font-family: Expressa-Regular;
+    margin: auto;
+    height: 985px;
+    width: 696px;
+    background-position: center;
+    background-image: url("vibecover2.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+}
+article{
+    margin: auto;
+}
+.titulo1{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*div {
+    position:fixed !important;
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    }*/
+.blackboldtext{
+    color:#000000
+}
+.whiteboldtext{
+    color: #ffffff
+}
+.yellowboldtext{
+    color: #e9c00c
+}
+#menu li{
+    list-style-type: none;
+  }
+.fright{
+    float:right
+}
+.fleft{
+    float:left
+}
+.bottom1{
+ text-align: justify;
+ position: absolute;
+ bottom: 5%;
+}
+.bottomrigth1{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.bottomleft1{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
