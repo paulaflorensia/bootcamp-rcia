@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>HTML Form</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <header>
+      <h1>HTML form</h1>
+    </header>
+    <main role="main">
+      <form action="submit" role="form">
+        <fieldset role="personalInfo">
+          <legend>Personal Information</legend>
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required>
+          </div>
+          <!-- As we aren't using css I used some br tags -->
+          <br>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required>
+          </div>
+          <br>
+          <div>
+            <legend>Choose your gender</legend>
+
+            <input type="radio" name="gender" id="famale" value="famale">
+            <label for="famale">Famale</label>
+
+            <input type="radio" name="gender" id="male" value="famale">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label>
+          </div>
+          <br>
+          <div>
+            <label for="documentType">Document type</label>
+            <select type="text" name="documentType" id="documentType" required>
+              <option value="">Select one type</option>
+              <option value="dni">DNI</option>
+              <option value="passport">Passport</option>
+              <option value="visa">Visa</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+          </div>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div>
+            <label for="email">email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <br>
+          <div>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone">
+          </div>
+          <div>
+            <p>Select your business days</p>
+            <input type="checkbox" name="available-days" id="monday" value="monday">
+            <label for="">Monday</label>
+
+            <input type="checkbox" name="available-days" id="tuesday" value="tuesday">
+            <label for="">Tuesday</label>
+
+            <input type="checkbox" name="available-days" id="wednesday" value="wednesday">
+            <label for="">Wednesday</label>
+
+            <input type="checkbox" name="available-days" id="thursday" value="thursday">
+            <label for="">Thursday</label>
+
+            <input type="checkbox" name="available-days" id="friday" value="friday">
+            <label for="">Friday</label>
+          </div>
+        </fieldset>
+        <br>
+        <div role="submit">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </main>
+    <footer>
+      <h3>Footer Info</h3>
+    </footer>
+  </body>
+</html>
