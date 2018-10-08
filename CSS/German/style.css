@@ -134,17 +134,20 @@ footer p{
 	float: left;
 	padding-left: 25px;
 	padding-right: 20px;
+	letter-spacing: 0.5px;
 
 	background-image: linear-gradient(to right, rgba(32,157,201,1), rgba(32,157,201,0));
 }
 
 .fright{
 	float: right;
-	padding-right: 15px;
+	padding-right: 20px;
 	padding-left: 20px;
+	padding-top: 0px;
 
-	font-weight: 700;
+	font-weight: 800;
 	color: black;
+	letter-spacing: 0.5px;
 
 	background-image: linear-gradient(to left, rgba(32,157,201,1), rgba(32,157,201,0));
 }
@@ -269,12 +272,14 @@ footer p{
 }
 
 .foot-coverline{
-	font-size: 8px;
+	font-size: 7px;
 	font-weight: bold;
 	color: white;
 	background-color: black;
 	text-transform: uppercase;
 
-	padding: 2px;
+	letter-spacing: 0.5px;
+
+	padding: 2px 3px;
 	line-height: 30px;
 }
