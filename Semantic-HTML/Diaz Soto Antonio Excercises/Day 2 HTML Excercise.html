@@ -3,11 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <title >Dia 2 HTML A11Y Form</title>
-
   <meta name="Antonio María Díaz Soto">
   <meta name="viewport" content="width=device-width">
+  <title >Dia 2 HTML A11Y Form</title>
 </head>
 <body>
 <header>
@@ -18,33 +16,33 @@
       <div>
         <h2>Los Campos Obligatorios se encuentran acompañados de <strong><abbr title="required">*</abbr></strong>.</h2>
       </div>
-      <ol role="tablist">
-        <li id="nom" role="tab">
-        <label for="nombre" role="tab">Nombre: </label>
-        <input id="nombre" type="text" name="nombre"/>
+      <ol>
+        <li>
+        <label for="nombre">Nombre: </label>
+        <input aria-label="Ingrese su Nombre" id="nombre" type="text" name="nombre"/>
       </li>
-      <li id="ape" role="tab">
-        <label for="apellido" role="tab">Apellido: </label>
-        <input id="apellido" type="text" name="apellido"/>
+      <li>
+        <label for="apellido">Apellido: </label>
+        <input aria-label="Ingrese su Apellido" id="apellido" type="text" name="apellido"/>
       </li>
-      <li id="dn" role="tab">
-        <label for="dni" role="tab">DNI: </label>
-        <input id="dni" type="text" name="dni" size="8" required />
+      <li>
+        <label for="dni">DNI: </label>
+        <input aria-label="Ingrese Numero de Documento" id="dni" type="text" name="dni" size="8" required />
         <strong><abbr title="obligatorio">*</abbr></strong>  
       </li>
-      <li id="usua" role="tab">
-        <label for="usuario" role="tab">Usuario: </label>
-        <input id="usuario" type="text" name="nombreusuario" required />
+      <li>
+        <label for="usuario">Usuario: </label>
+        <input aria-label="Ingrese un Usuario para su identificacion" id="usuario" type="text" name="nombreusuario" required />
         <strong><abbr title="obligatorio">*</abbr></strong>
       </li>
-      <li id="pass" role="tab">
-        <label for="contraseña" role="tab">Contraseña: </label>
-        <input id="contraseña" type="password" name="contraseña" required />
+      <li>
+        <label for="contraseña">Contraseña: </label>
+        <input aria-label="Ingrese una contraseña" id="contraseña" type="password" name="contraseña" required />
         <strong><abbr title="obligatorio">*</abbr></strong>
       </li>
-      <li id="fechnac" role="tab">
-        <label for="idnacimiento" role="tab">Fecha de Nacimiento: </label>
-        <input type="text" id="idnacimiento" name="nacimiento" maxlength="10" /><em> formateada como dd/mm/yyyy </em>
+      <li>
+        <label for="idnacimiento">Fecha de Nacimiento: </label>
+        <input type="text" aria-label="Ingrese su fecha de nacimiento de forma numerica empezando por el dia y separado con barras" id="idnacimiento" name="nacimiento" maxlength="10" /><em> formateada como dd/mm/yyyy </em>
       </li>
     </ol>
   <fieldset>
@@ -65,12 +63,6 @@
       </ul>
     </fieldset>  
     <input type="submit" value="Enviar">
-<!--<div id="nombre" role="tabpanel" aria-labelledby="nom">Ingrese su Nombre</div>
-<div id="apellido" role="tabpanel" aria-labelledby="ape">Ingrese su Apellido</div>
-<div id="dni" role="tabpanel" aria-labelledby="dn">Ingrese el numero de DNI</div>
-<div id="usuario" role="tabpanel" aria-labelledby="usua">Ingrese el Usuario que desea utilizar</div>
-<div id="contraseña" role="tabpanel" aria-labelledby="pass">Ingrese una Contraseña</div>
-<div id="idnacimiento" role="tabpanel" aria-labelledby="fechnac">Ingrese su fecha de nacimiento separado por barras iniciando por el dia</div>-->
 </form>
 <section>
   <button type="button">Add</button>
@@ -78,12 +70,10 @@
   </article>
 <footer>
   <ul>
-    <li id=inicio1 role="tab">
-        <a href="#inicio2">Ir al inicio de este artículo</a>
+    <li>
+        <a aria-label="Volver al Inicio de este artículo" href="#inicio2">Ir al inicio de este artículo</a>
     </li>
   </ul>
-  <div id="inicio2" role="tabpanel" aria-labelledby="inicio1">Volver al inicio del articulo
-</div>
 </footer>
 </body>
 </html>
