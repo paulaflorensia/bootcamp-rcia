@@ -11,7 +11,11 @@
         
     }
 
-    #december{
+    .white{
+        color: #FFF;
+    }
+
+    .december{
         float: left;
         margin-left: -2%;
         margin-bottom: -5%;
@@ -29,7 +33,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1 );
     }
 
-    #vibe {
+    .vibe {
         float:right;
         margin-right: -4%;
         margin-bottom: -5%; 
@@ -47,125 +51,105 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bce0ee', endColorstr='#29b8e5', GradientType=1 );
     }
 
-    #titulo-div{
+    .titulo-div{
         margin-left: 10%;
     }
 
-    #titulo{
-        text-align: center;
-        font-size: 180px;
-        font-family: titulo;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        display: inline-block;
-    }
+        .titulo{
+            text-align: center;
+            font-size: 180px;
+            font-family: titulo;
+            margin: 0px;
+            display: inline-block;
+        }
 
-     #titulo1{
-        color: #FFF ;
-        text-align: center;
-        font-size: 180px;
-        font-family: titulo;
-        margin-bottom: 0px;
-        margin-top: 0px;
-        display: inline-block;
-    }
-
-    
-
-    #subtitulo{
+    .subtitulo{
         text-align: center;
         font-family: 'Ubuntu', sans-serif;      
         
     }
 
-    #s1{
-        font-size: 26px;
-        margin-bottom: 0px;
-        color: #FFF;
-    }
+        .subtitulo :first-child{
+            font-size: 26px;
+            margin-bottom: 0px;
+            color: #FFF;
+        }
 
-    #s2{
-        font-size: 100px;
-        margin-top: -20px;
-        color: yellow;
-    }
-    #abajo1{
-        text-align: right;
-        font-family: 'Archivo Black', sans-serif;
-        line-height: 8%;
-        font-size: 30px;
-    }
-    #abajo2{
-        color: #FFF;
-        text-align: right;
-        font-family: 'Archivo Black', sans-serif;
-        line-height: 10%;
-        font-size: 20px;
-    }
+        .subtitulo :nth-child(2){
+            font-size: 100px;
+            margin-top: -20px;
+            color: yellow;
+        }
+
+
     .caja{
         display: block;
         margin-top: 25%;
         margin-right: 3%;
+        text-align: right;
+        font-family: 'Archivo Black', sans-serif;
        
     }
-    #mas{
-        color: #FFF;
-        text-align: right;
-        display: block;
-        font-family: 'Ubuntu', sans-serif;
-        font-size: 80px;
-        margin-top: -4%;
-        margin-bottom: 1%;
-    }
 
-    #linea{
-        font-size: 80px;
-        text-align: right;
-        margin-top:-85px;
-        margin-bottom: 0%;
-    }
+        .mas{
+            text-align: right;
+            display: block;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 80px;
+            margin-top: -4%;
+            margin-bottom: 1%;
+        }
+        .abajo1{
+            line-height: 8%;
+            font-size: 30px;
+        }
+        .abajo2{
+            line-height: 10%;
+            font-size: 20px;
+        }
+        .caja :last-child{
+            font-size: 80px;
+            text-align: right;
+            margin-top:-85px;
+            margin-bottom: 0%;
+        }
 
     .abajoI{
         float:left;
         margin-top: -114px;
         margin-left: 37px;
+        font-family: 'Archivo Black', sans-serif;
     }
 
-    #seis{
-        display: inline-block;
-        margin: 0px;
-        font-family: 'Markazi Text', serif;
-        font-size: 85px;
-    }
+        .abajoI :first-child{
+            display: inline-block;
+            margin: 0px;
+            font-family: 'Markazi Text', serif;
+            font-size: 85px;
+        }
+        .abajoI :nth-child(2){
+            display: inline-block;
+            font-size: 18px;
+            margin: 0px;
 
-    #abajoS{
-        display: inline-block;
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 18px;
-        margin: 0px;
-        
-    }
-
-    .abajoS1{
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 18px;
-        margin: 0px;
-        margin-top: -32px;
-    }
-    .abajoS2{
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 18px;
-        margin: 0px;
-        margin-top: -10px;
-    }
+        }
+        .abajoI :nth-child(3){
+            font-size: 18px;
+            margin: 0px;
+            margin-top: -32px;
+        }
+        .abajoI :nth-child(4){
+            font-size: 18px;
+            margin: 0px;
+            margin-top: -10px;
+        }
 
     .final{
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
         text-align: center;
         background: #000;
-        color: #FFF;
-        margin-left: 20px;
+        margin-left: 20px;  
         margin-top: 0px;
         padding-left: 0px;
         padding-right: 0px;
