@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 75%;
+  margin: auto;
+  color: whitesmoke;
+}
+
+main {
+  background-image: url("./background-image.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  text-align: right;
+}
+
+header {
+  font-size: 20px;
+}
+
+header p {
+  display: inline-block;
+}
+
+.date {
+  background: linear-gradient(to right, #1f9eca 80%, transparent);
+  float: left;
+  width: 25%;
+}
+
+.date span {
+  padding-right: 15%;
+}
+
+.website {
+  background: linear-gradient(to left, #1f9eca 80%, transparent);
+  width: 25%;
+  color: black;
+}
+
+.website span {
+  padding-right: 30%;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title p:first-child {
+  color: whitesmoke;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.title p:last-child {
+  color: #ffe902;
+  font-size: 6em;
+  margin: 0;
+}
