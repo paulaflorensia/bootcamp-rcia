@@ -23,7 +23,6 @@ sumbline
 atom
 ```
 
-
 ## Running the tests
 
 You should use the browser inspector
