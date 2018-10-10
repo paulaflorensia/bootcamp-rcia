@@ -1,6 +1,6 @@
-function counterCalculator{
+var calculator = function(val1, val2, operator){
 	var globalResult = 0;
-	function calculator(val1, val2, operator){
+	return function(){
 		var result;
 	
 		var validOperators = ['+','-','*','/'];
@@ -33,10 +33,10 @@ function counterCalculator{
  	       result = val1/val2;
  	       break;
  		default:
- 	   	return "Invalid operator";
+ 	   		return "Invalid operator";
 		};
 	
 		this.globalResult = result;
 		return this.globalResult;
-	};
-}
+	}();
+};
