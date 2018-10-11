@@ -22,9 +22,9 @@
 
 		<!-- <div class="btn display"><input type="text" disabled></div> -->
 
-		<div class="btn reset">C</div>
+		<div class="btn reset" onclick="erase()">C</div>
 		<div class="btn arithmetic">&#40;&#32;&#41;</div>
-		<div class="btn arithmetic">&#9003;</div>
+		<div class="btn arithmetic" onclick="eraseOne()">&#9003;</div>
 		<div class="btn arithmetic" onclick="keystroke('/')">&#247;</div>
 
 		<div class="btn" onclick="keystroke('7')">7</div>
@@ -45,7 +45,7 @@
 		<div class="btn">&plusmn;</div>
 		<div class="btn" onclick="keystroke('0')">0</div>
 		<div class="btn">&#46;</div>
-		<div class="btn equal">&#61;</div>
+		<div class="btn equal" onclick="calc()">&#61;</div>
 	</article>
 	
 </body>

@@ -3,7 +3,27 @@ function keystroke(key){
 	document.getElementById('result').value = document.getElementById('result').value+key;
 };
 
+function erase(){
+	document.getElementById('result').value = "";
+}
 
+function eraseOne(){
+	document.getElementById('result').value = document.getElementById('result').value.slice(0, -1);
+}
+
+function calc(){
+	var r = 0;
+
+	string = document.getElementById('result').value;
+	string = string.replace("-","+-");
+	terms = string.split('+');
+
+	for(let t of terms){
+		r = r + parseInt(t);
+	}
+
+	document.getElementById('result').value = r;	
+}
 
 var calculator = function(val1, val2, operator){
 
