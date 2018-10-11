@@ -1,5 +1,8 @@
 var calculator = function(val1, val2, operator){
-	var globalResult = 0;
+	if(globalResult == null){
+		var globalResult = 0;
+	}
+	
 	return function(){
 		var result;
 	
