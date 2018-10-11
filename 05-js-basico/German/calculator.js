@@ -12,6 +12,9 @@ var calculator = function(val1, val2, operator){
 		if(validOperators.includes(val2)){
 			operator = val2;
 			val2 = globalResult;
+			if(operator == '/'){
+				[val1, val2] = [val2, val1];
+			}
 		}
 
 		if(operator == '+' && (typeof val1 == 'string' || typeof val2 == 'string')){
@@ -34,7 +37,7 @@ var calculator = function(val1, val2, operator){
  	   			return "Can't divide by zero";
  	   			break;
  	   		}
- 	   		/*In this case the new value act as divisor*/
+ 	   		/*If we get only one argument it acts as divisor*/
  	       result = val1/val2;
  	       break;
  		default:
