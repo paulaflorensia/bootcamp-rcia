@@ -1,7 +1,8 @@
 var calculator = function(val1, val2, operator){
-	if(globalResult == null){
-		var globalResult = 0;
-	}
+
+	if(typeof globalResult == 'undefined'){
+		globalResult = 0;
+	};
 	
 	return function(){
 		var result;
@@ -33,6 +34,7 @@ var calculator = function(val1, val2, operator){
  	   			return "Can't divide by zero";
  	   			break;
  	   		}
+ 	   		/*In this case the new value act as divisor*/
  	       result = val1/val2;
  	       break;
  		default:
