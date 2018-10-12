@@ -123,6 +123,12 @@ function keypress_focus(e){
         case 109://numpad
         	keystroke('-');
         	break;
+        case 106://numpad
+        	keystroke('*');
+        	break;
+        case 111://numpad
+        	keystroke('/');
+        	break;
 		};
 		
 }
@@ -133,7 +139,7 @@ function calc(){
 
 	string = document.getElementById('result').value;
 
-	string = string.replace("-","+-");
+	string = string.replace(/[-]/g,"+-");
 	terms = string.split('+');
 
 	for(let t of terms){
@@ -153,15 +159,15 @@ function calc(){
 function products(term){
 	y = 1;
 
-	term = term.replace("/","*/");
+	term = term.replace(/[\/]/g,"*/");
 	prods = term.split('*');
 
 	for(let pr of prods){
 		if(pr.charAt(0)=='/'){//la primera es dividido
 			pr = pr.substring(1);
-			pr = 1/Number(pr);//es el inverso
+			pr = 1/parseFloat(pr);//es el inverso
 		};
-		y = y * Number(pr);
+		y = y * parseFloat(pr);
 	};
 
 	return y;
