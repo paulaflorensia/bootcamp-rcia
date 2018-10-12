@@ -4,7 +4,6 @@ window.onload = function() {
 }
 
 document.addEventListener("keydown",keypress);
-//document.getElementById('result').addEventListener("keydown",alert('ok'));
 
 function splitSelection(){
 	var myElement = document.getElementById('result');
@@ -22,44 +21,38 @@ function splitSelection(){
 
 function keystroke(key){
 
+	if(document.getElementById("result").value == "Invalid Syntax"){
+		document.getElementById("result").value = "";
+	}
+
 	var selection = splitSelection();
 
 	document.getElementById('result').value = selection[0]+key+selection[2];
 	document.getElementById('result').selectionStart = selection[0].length+1;
 	document.getElementById('result').selectionEnd = selection[0].length+1;
+
+	document.getElementById('result').focus();
 };
 
 function erase(){
 	document.getElementById('result').value = "";
+	document.getElementById('result').focus();
 }
 
-
-/*
 function eraseOne(){
-	if(document.activeElement === document.getElementById("result")){
+
 		var selection = splitSelection();
+
+		if(selection[1].length == 0){
+			selection[0] = selection[0].slice(0, -1);
+		};
+
 		document.getElementById('result').value = selection[0]+selection[2];
-		console.log(selection[0]);
-		console.log(selection[1]);
-		console.log(selection[2]);
-		console.log(document.getElementById('result').value);
+
 		document.getElementById('result').selectionStart = selection[0].length+1;
 		document.getElementById('result').selectionEnd = selection[0].length+1;
-	}
-	else{
-		document.getElementById('result').value = document.getElementById('result').value.slice(0, -1);
-	}
 	
 }
-
-
-function validateInput(e){
-	if(e.keyCode == '65'){
-		alert('a');
-		return false;
-	}
-}
-*/
 
 function keypress(e){
 
@@ -70,10 +63,10 @@ function keypress(e){
 	};
 
 	switch(e.keyCode) {
-        case 13:
+        case 13: //enter
             calc();
             break;
-        case 27:
+        case 27: //scape
             erase();
             break;
     } 
@@ -83,58 +76,55 @@ function keypress(e){
 function keypress_focus(e){
 	switch(e.keyCode){
 		case 48:
-		case 96:
+		case 96://numpad
             keystroke('0');
             break;  
         case 49:
-        case 97:
+        case 97://numpad
             keystroke('1');
             break;
         case 50:
-        case 98:
+        case 98://numpad
             keystroke('2');
             break;
         case 51:
-        case 99:
+        case 99://numpad
             keystroke('3');
             break;
         case 52:
-        case 100:
+        case 100://numpad
             keystroke('4');
             break;  
         case 53:
-        case 101:
+        case 101://numpad
             keystroke('5');
             break;  
         case 54:
-        case 102:
+        case 102://numpad
             keystroke('6');
             break;
         case 55:
-        case 103:
+        case 103://numpad
             keystroke('7');
             break;
         case 56:
-        case 104:
+        case 104://numpad
             keystroke('8');
             break;
         case 57:
-        case 105:
+        case 105://numpad
             keystroke('9');
             break;
         case 187:
-        case 107:
+        case 107://numpad
         	keystroke('+');
         	break;
         case 189:
-        case 109:
+        case 109://numpad
         	keystroke('-');
         	break;
-        //case 8:
-            //eraseOne();
-          //  break;
 		};
-		document.getElementById('result').focus();
+		
 }
 
 function calc(){
@@ -147,10 +137,35 @@ function calc(){
 	terms = string.split('+');
 
 	for(let t of terms){
-		r = r + parseInt(t);
+
+		p = products(t);
+
+		r = r + Number(p);
+	};
+
+	if(isNaN(r)){
+		r = "Invalid Syntax";
 	};
 
 	document.getElementById('result').value = r;	
+};
+
+function products(term){
+	y = 1;
+
+	term = term.replace("/","*/");
+	prods = term.split('*');
+
+	for(let pr of prods){
+		if(pr.charAt(0)=='/'){//la primera es dividido
+			pr = pr.substring(1);
+			pr = 1/Number(pr);//es el inverso
+		};
+		y = y * Number(pr);
+	};
+
+	return y;
+
 };
 
 var calculator = function(val1, val2, operator){
