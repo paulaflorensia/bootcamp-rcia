@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator UI</title>
+
+	<meta name="author" content="German A. Monzon">
+
+	<!-- Link to CSS file -->
+	<link href="style.css" rel="stylesheet">
+
+	<meta name="author" content="German A. Monzon">
+
+	<!-- Link to JS file -->
+	<script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+
+	<article id="calculator">
+
+		<div class="btn display"><input id="result" type="text" onkeypress="return false;"></div>
+
+		<!-- <div class="btn display"><input type="text" disabled></div> -->
+
+		<div class="btn reset" onclick="erase()">C</div>
+		<div class="btn arithmetic">&#40;&#32;&#41;</div>
+		<div class="btn arithmetic" onclick="eraseOne()">&#9003;</div>
+		<div class="btn arithmetic" onclick="keystroke('/')">&#247;</div>
+
+		<div class="btn" onclick="keystroke('7')">7</div>
+		<div class="btn" onclick="keystroke('8')">8</div>
+		<div class="btn" onclick="keystroke('9')">9</div>
+		<div class="btn arithmetic" onclick="keystroke('*')">&#215;</div>
+
+		<div class="btn" onclick="keystroke('4')">4</div>
+		<div class="btn" onclick="keystroke('5')">5</div>
+		<div class="btn" onclick="keystroke('6')">6</div>
+		<div class="btn arithmetic" onclick="keystroke('-')">&#45;</div>
+
+		<div class="btn" onclick="keystroke('1')">1</div>
+		<div class="btn" onclick="keystroke('2')">2</div>
+		<div class="btn" onclick="keystroke('3')">3</div>
+		<div class="btn arithmetic" onclick="keystroke('+')">&#43;</div>
+
+		<div class="btn">&plusmn;</div>
+		<div class="btn" onclick="keystroke('0')">0</div>
+		<div class="btn">&#46;</div>
+		<div class="btn equal" onclick="calc()">&#61;</div>
+	</article>
+	
+</body>
+</html>
