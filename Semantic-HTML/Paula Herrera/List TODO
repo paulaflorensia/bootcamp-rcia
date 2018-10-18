@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vacaciones de Verano</title>
+</head>
+<body>
+    <div>
+        <h2>Vacaciones</h2>
+        <p>Verano 2019</p>
+    </div>
+    <form>
+        <div>
+            <legend>Destino</legend>
+                <select id="accion" name="select" required>
+                    <option value="1">Costa Rica</option>
+                    <option value="2">Ecuador</option>
+                    <option value="3">Mexico</option>
+                    <option value="4">Cuba</option>
+                    <option value="5">Colombia</option>
+                </select>
+        </div>
+        <div>
+            <fieldset>
+                <legend>¿Qué no debe faltar en el viaje?</legend>
+                    <input type="checkbox" name="requerimientos" id="Playas" value="Playas">
+                    <label for="Playas">Playas</label><br>
+                    <input type="checkbox" name="requerimientos" id="Montañas" value="Montañas">
+                    <label for="Montañas">Montañas</label><br>
+                    <input type="checkbox" name="requerimientos" id="Selva" value="Selva">
+                    <label for="Selva">Selva</label><br>
+                    <input type="checkbox" name="requerimientos" id="Cultura" value="Cultura">
+                    <label for="Cultura">Cultura</label><br>
+                    <input type="checkbox" name="requerimientos" id="Pub" value="Pub">
+                    <label for="Pub">Pub</label><br>
+                    <input type="checkbox" name="requerimientos" id="Historia" value="Historia">
+                    <label for="Historia">Historia</label><br>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset>
+                <legend>¿Con quién iras?</legend>
+                <input id="Sola" type="radio" name="pasajeros" value="Sola">
+                <label for="Sola">Sola</label><br>
+                <input id="Con amigos" type="radio" name="pasajeros" value="Con amigos">
+                <label for="Con amigos">Con amigos</label><br>
+                <input id="En familia" type="radio" name="pasajeros" value="En familia">
+                <label for="En familia">En familia</label><br>
+                <input id="Amigos y familia" type="radio" name="pasajeros" value="Amigos y familia">
+                <label for="Amigos y familia">Amigos y familia</label><br>
+            </fieldset>
+        </div>
+        <div>
+            <ul><legend>Necesitarás</legend>
+                <li>Pasaporte</li>
+                <li>Seguro médico</li>
+                <li>Pasajes de ida y vuelta</li>
+                <li>Reserva de alojamiento</li>
+            </ul>
+        <div>
+            <legend>Recordar:</legend>
+                <textarea id="descripcion" name="descripcion"></textarea>
+                <label for="descripcion" placeholder="Escribir descripcion"></label>
+        </div>
+        <div>
+            <input type="submit" name="submit" value="Guardar">
+            <label for="submit"></label>
+        </div>
+    </form>
+</body>
