@@ -1,0 +1,79 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+html{
+	height: 100%;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+
+#calculator{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 70px;
+	height: 50px;
+
+	border: 1px solid #ccc;
+	margin: -0.5px;
+}
+
+.btn:hover{
+	background-color: #ccc;
+	cursor: pointer;
+}
+
+.btn:active{
+	background-color: #777;
+}
+
+.display{
+	grid-column-start: 1;
+  	grid-column-end: 5;
+
+  	width:283px;
+}
+
+.display input{
+	width: 100%;
+	height: 98%;
+
+	border: none;
+	padding: 0px 5px;
+
+	text-align: right;
+
+	font-size: 20px;
+	
+	font-family: 'Roboto', sans-serif;
+
+	letter-spacing: 1px;
+}
+
+.arithmetic{
+	color: #59a7e5;
+}
+
+.equal{
+	background-color: #59a7e5;
+	color: white;
+}
+
+.reset{
+	color: orange;
+}

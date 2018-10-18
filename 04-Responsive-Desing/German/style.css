@@ -1,0 +1,145 @@
+/*-----------------------------
+-----Mobile First Approach-----
+-------------------------------*/
+
+/*-----GENERAL-----*/
+
+header {
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+header h2{
+	display: none;
+}
+
+aside ul{
+	display: none;
+}
+
+aside{
+	background-color: orange;
+	padding: 3px;
+	border-radius: 10px;
+}
+
+select{
+	font-size: 20px;
+}
+
+section{
+	background-color: blue;
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin: 20px 0px;
+	color: white;
+	font-size:14px;
+}
+
+footer{
+	background-color: pink;
+	border-radius: 10px;
+}
+
+@media screen and (min-width: 480px) {
+header h2{
+	display: initial;
+}
+
+header{
+	margin-bottom: 20px;
+}
+}
+
+@media screen and (min-width: 600px) {
+aside ul{
+	display: initial;
+}
+
+aside select{
+	display: none;
+}
+
+aside{
+	width: 29%;
+	float:left;
+}
+
+article{
+	margin-left: 30%;
+}
+
+section{
+	margin-left: 1%;
+	width: 44%;
+	display: inline-block;
+	float: left;
+	margin-top: 0px;
+}
+
+footer{
+	clear: both;
+}
+
+}
+
+@media screen and (min-width: 936px) {
+section{
+	width: 29%;
+}
+
+}
+
+@media screen and (min-width: 1366px) { 
+
+}
+
+/*body{
+	margin: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+aside{
+	display: inline-block;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+
+article{
+	display: inline-block;
+	color: white;
+	vertical-align: top;
+}
+
+section{
+	background-color: blue;
+	margin-right: 10px;
+	padding: 15px 10px;
+	width: 300px;
+	float: left;
+	border-radius: 10px;
+}
+
+nav{
+	width: 200px;
+	float: left;
+	border-radius: 10px;
+}
+
+ul{
+	list-style-type: none;
+	padding: 20px 0px 20px 10px;
+}
+
+section{
+	display: inline-block;
+}
+
+footer{
+	background-color: pink;
+	border-radius: 10px;
+}*/
+}
