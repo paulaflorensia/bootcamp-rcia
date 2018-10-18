@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+header {
+    width: 97%;
+    height: 65px;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: block;
+    background-color: yellow;  -moz-border-radius: 15px;  -webkit-border-radius:15px;
+    font-size: 1em; color: black; text-align: center;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+nav {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: 20px;
+    background-color: orange; -moz-border-radius: 15px;  -webkit-border-radius:15px;
+    font-size: 1em; color: black; text-align: left; padding: 2%;
+    float: left;
+}
+
+.articulos article {
+    width: 25%;
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: blue; -moz-border-radius: 15px;  -webkit-border-radius:15px; 
+    float: left;
+    position: relative;
+    padding: 2%;
+    font-size: 1em; color: white; text-align: left; 
+}
+
+.articulos p{
+    margin-top: 10px;
+    font-size: 1em; color: white; text-align: left; 
+    display: block;
+    float: left;
+}
+
+footer {
+    clear: both;
+    width: 97%;
+    height: 50px;
+    margin: auto;
+    display: block;
+    background-color: rgb(245, 197, 237);  -moz-border-radius: 15px;  -webkit-border-radius:15px;
+} 
+
+footer p {
+    display: block;
+    font-size: 15px; color: black; text-align: left;
+    padding: 10px;
+}
+
+/**Primer responsive con media queries**/
+
+@media only screen and(min-width:600) and (max-width:93px){
+
+    body {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    header {
+        width: 97%;
+        height: 80px;
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: block;
+        background-color: yellow;  -moz-border-radius: 15px;  -webkit-border-radius:15px;
+        font-size: 1em; color: black; text-align: center;
+    }
+
+    header p {
+        display: none
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    nav {
+        width: 15%;
+        height: auto;
+        display: block;
+        margin-left: 20px;
+        background-color: orange; -moz-border-radius: 15px;  -webkit-border-radius:15px;
+        font-size: 1em; color: black; text-align: left; padding: 2%;
+        float: left;
+    }
+
+    .articulos article {
+        width: 30%;
+        height: auto;
+        display: flex;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        background-color: blue; -moz-border-radius: 15px;  -webkit-border-radius:15px; 
+        float: left;
+        position: relative;
+        padding: 2%;
+        font-size: 1em; color: white; text-align: left; 
+    }
+
+    .articulos p{
+        margin-top: 10px;
+        font-size: 1em; color: white; text-align: left; 
+        display: block;
+        float: left;
+    }
+
+    footer {
+        clear: both;
+        width: 97%;
+        height: 70px;
+        margin: auto;
+        display: block;
+        background-color: rgb(245, 197, 237);  -moz-border-radius: 15px;  -webkit-border-radius:15px;
+    } 
+
+    footer p {
+        display: block;
+        font-size: 15px; color: black; text-align: left;
+        padding: 10px;
+    }
+}
