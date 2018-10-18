@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+
+    <title>Magazine</title>
+</head>
+<body>
+    <header>
+        <nav class="datos">
+            <p id="fecha">December 2016</p>
+            <a href="www.vibe.com">www.vibe.com</a>
+        </nav>
+    </header>
+    <main>
+            <div class="titulo1">
+                <h1>vibe.ng</h1>
+                <h4>THE RISE & RISE OF</h4>
+                <h2>YCEE</h2>
+            </div>
+            <div>
+                <article class="titulo2">
+                    <h1>6</h1>
+                    <p id="linea1">REASONS WHY GIRLS ARE <br></p>
+                    <p id="linea2">ABOUT RUNTOWN'S<br>
+                MAD OVER YOUNG</p>
+                </article>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <h1>+</h1>
+                        <li class="listtitle">
+                            <h2>3 NIGERIAN<br>
+                            FASHION<br>
+                            DESIGNERS<br></h2>
+                            <p>TO LOOKOUT FOR<br>
+                            IN 2017<br>
+                            </p>
+                        </li>
+                        <li class="listtitle">
+                            <h2>TOP 10 NIGERIA<br></h2>
+                            <p>MUSIC VIDEOS<br>
+                            OF 2O16<br></p>
+                        </li>
+                        <li class="listtitle">
+                            <h2>NEHRI OKWA<br></h2>
+                            <p>YOUNG CREOs<br>
+                           MAKING IT<br></p>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    </main>
+    <footer>
+            <div class="pie">
+              <p>APPLE MUSIC LOCAL PRICING: A GOLDMINE FOR THE NIGERIAN MUSIC INDUSTRY</p>
+          </div>
+    </footer>
+</body>
+</html>
