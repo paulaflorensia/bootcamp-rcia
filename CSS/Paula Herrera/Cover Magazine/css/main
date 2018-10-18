@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+body {
+    width:900px;
+    height: auto;
+    margin: auto;
+    background: url(../img/cover.jpg) no-repeat fixed center center;
+	background-size: 900px 900px;
+    background-attachment: fixed;
+    
+}
+
+
+#fecha {
+    width: 150px;
+    text-align: end;
+    margin-top: 10px;
+    padding: 5px;
+    float: left;
+    background: linear-gradient(90deg, dodgerblue, transparent);
+    font-size: 15px; color: aliceblue; font-weight: bold;
+}
+
+.datos a {
+    width: 150px;
+    text-align: left;
+    margin-top: 10px;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    float: right;
+    background: linear-gradient(-90deg, dodgerblue, transparent);
+    font-size: 15px; color: aliceblue; font-weight: bold;
+}
+
+main{
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.titulo1 {
+    top: 10px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.titulo1 h1 {
+    width: 100%;
+    height: auto;
+    font-family: Expressa-regular; font-size: 200px; color: white; font-weight: bold;
+}
+
+.titulo1 h4 {
+    font-size: 40px; color: rgb(16, 21, 65);
+}
+
+.titulo1 h2 {
+    font-size: 100px; color: yellow;
+}
+
+.titulo2 {
+    margin-top: 35%;
+    width: 50%;
+    height: autopx;
+    display: block;
+    float: left;
+    padding: 25px;
+}
+
+.titulo2 h1 {
+    text-align: center;
+    float: left;
+    width: 40px;
+    height: 40px;
+    font-size: 50px; font-weight: bold;
+    display: block;     
+}
+
+#linea1{
+    text-align: left;
+    margin-top: 40px;
+    width:300px;
+    font-size: 1em; font-weight: bold;
+    float: left;
+    position: relative; 
+    
+}
+
+#linea2{
+    text-align: left;
+    margin-top: 5px;
+    width: 400px;
+    font-size: 1em; font-weight: bold;
+    float: left;
+    position: relative; 
+}
+
+nav ul{
+    margin-top: 15%;
+    padding: 25px;
+    width: 50%;
+    height: auto;
+    float: right;
+    text-align: right;
+    list-style: none;
+    position: relative;
+    color: rgb(16, 21, 65);
+}
+
+.listtitle p{
+    font-size: 15px; color: white;
+}
+
+footer{
+    margin-left: 25px;
+    top: 910px;
+    bottom: 10px;
+    width: 850px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    display: block;
+}
+
+.pie p{
+    width: 100%;
+    font-size: 15px; color: white; text-align: center;
+}
