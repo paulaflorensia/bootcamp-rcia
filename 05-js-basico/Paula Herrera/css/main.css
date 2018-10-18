@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 331px;
+    height: 667px;
+    border: 1px solid black;
+    background-image: url(../img/mobile.png);
+    background-repeat: no-repeat;
+}
+
+.main{
+    width: 290px;
+    height: 515px;
+    color: rgb(12, 12, 12);
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+.textview{
+    border: none;
+    width: 290px;
+    height: 146px;
+    background: black;
+    font-size: 2em; color:white; text-align: right; padding: 3%;
+    font-family: Lucida Sans;
+}
+
+.button{
+    color: gainsboro;
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-size: 1em; font-family: Lucida Sans; color: rgb(12, 12, 12);
+    margin: 0;   
+    cursor: pointer; 
+}
+
+.button1{
+    color: orange;
+    border: none;
+    width: 70px;
+    height: 70px;
+    font-size: 1em; font-family: Lucida Sans; color: rgb(12, 12, 12);
+    margin: 0;   
+    cursor: pointer; 
+}
+
+table{
+    background-color: #5252526b;
+}
