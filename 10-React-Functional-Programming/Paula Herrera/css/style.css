@@ -1,0 +1,33 @@
+body {
+    width: 50%;
+    height: auto;
+    padding: 2%;
+  }
+  
+  #arraychallenge {
+    border-left: 5px solid rgb(245, 46, 36);
+    padding: 4%;
+  }
+  
+  #arraychallenge1 {
+    border-left: 5px solid rgb(159, 240, 18);
+    padding: 4%;
+  }
+  
+  #arraychallenge2 {
+    border-left: 5px solid rgb(20, 131, 235);
+    padding: 4%;
+  }
+
+  .Part1 {
+    color:  rgb(245, 46, 36);
+  } 
+
+  .Part1a {
+    color:  rgb(159, 240, 18);
+  } 
+
+  .Part1b {
+    color: rgb(20, 131, 235);
+  }
+
