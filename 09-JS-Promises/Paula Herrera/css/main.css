@@ -1,0 +1,26 @@
+.conteiner {
+    width: 600px;;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    padding: 4%;
+    background-color: rgb(73, 71, 71);
+}
+
+h2 {
+    font-family: gotham; font-size: 2em; color: rgb(207, 207, 2); font-weight:bold;
+}
+
+#title {
+    font-family: gotham;
+    cursor: pointer;
+}
+
+#result {
+    font-family: gotham; color: white; font-weight: 250; font-size: 15px;
+    overflow: hidden;
+}
+
+#allfilms {
+    font-family: gotham; color: black; font-weight: normal;
+}
