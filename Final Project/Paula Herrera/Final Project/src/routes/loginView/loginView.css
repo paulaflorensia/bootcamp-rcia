@@ -1,0 +1,35 @@
+.login-view__button {
+    float: left;
+    margin-left: 20%;
+    font-family: Trebuchet MS, sans-serif; color: white; font-size: 15px; font-weight: 700;
+    width: 10%;
+    height: 35px;
+    border-style: none;
+    border: none; border-radius: 17px;
+    background-color: #1DB954; 
+    cursor: pointer;
+
+}
+
+.login-view__welcome {
+    margin-left: 20%;
+    text-align: left;
+    color: rgb(228, 228, 228);
+  }
+  
+  
+.login-view__subtitle {
+    margin-top: 50px;
+  }
+  
+.login-view__title {
+    font-size: 3em;  
+    margin-bottom: 10px;
+  }
+  
+ .login-view__paragraph {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  

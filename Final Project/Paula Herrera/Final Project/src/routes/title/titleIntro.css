@@ -1,0 +1,27 @@
+.title-intro__welcome {
+  text-align: left;
+  margin-left: 20%;
+  color: #ffffff;
+}
+
+
+.title-intro__subtitle {
+  margin-top: 50px;
+}
+
+.title-intro__title {
+  font-size: 3em;  
+  margin-bottom: 10px;
+}
+
+.title-intro__paragraph {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/

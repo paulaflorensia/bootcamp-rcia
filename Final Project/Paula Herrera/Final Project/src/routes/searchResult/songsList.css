@@ -1,0 +1,46 @@
+
+.songs-list {
+    width: 50%;
+    margin: auto;
+    border-top: 1px solid rgb(210, 210, 210);
+    margin-top: 20px;
+}
+
+.songs-list__name-album {
+    padding: 5px;
+    color: rgb(210, 210, 210);
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.songs-list__songs-track {
+    margin-top: 5px;
+}
+
+.songs-list__songs-track-list-1 {
+    text-align: left;
+    list-style: none;
+    color: rgb(204, 202, 202);
+    padding: 7px;
+    background-color: rgba(255, 255, 255, .10);
+}
+
+.songs-list__songs-track-list-2 {
+    text-align: left;
+    list-style: none;
+    color: rgb(204, 202, 202);
+    padding: 7px;
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.songs-list__songs-track-play {
+    color: rgb(204, 202, 202); 
+    float: right;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(255, 255, 255, .0);
+    font-size: 20px;
+    padding-bottom: 3px;
+
+}

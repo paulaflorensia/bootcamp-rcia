@@ -1,0 +1,29 @@
+.main-view {
+  margin: auto;
+  width: 100%;
+}
+.main-view__logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  height: 42px;
+}
+
+.main-view__header {
+  background-color: #222;
+  padding: 20px;
+}
+
+.main-view__footer {
+  background-color: #222;
+  padding: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  position:fixed;
+
+}
+
+.main-view__footer-p {
+  color: rgb(124, 123, 124);
+  font-size: 14px;
+}

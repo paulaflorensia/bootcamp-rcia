@@ -1,0 +1,58 @@
+
+.list-results__cont {
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+    border-top: 1px solid rgb(210, 210, 210);
+}
+
+.list-results {
+    display: flex;
+    padding: 5px;
+}
+
+.list-results__list-artist {
+    margin-top: 15px;
+    text-align: left; 
+    width: 50%;
+    height: 100px;
+    position: relative;
+    background-color: rgba(255, 255, 255, .20);
+    list-style: none;
+}
+
+.list-results__link {
+    color: rgb(210, 210, 210);
+    text-decoration: none;
+}
+
+.list-results__list-artist-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.list-results__list-artist-title {
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: 110px;
+    text-decoration: none;
+}
+
+.list-results__description {
+    margin-left: 30%;
+}
+
+.list-results__description-artist {
+    margin-left: 13px;
+}
+
+.list-results__description-list {
+    font-size: 12px;
+    color: rgb(210, 210, 210);
+    text-align: left; 
+    position: relative;
+    list-style: none;
+    padding: 3px;
+}

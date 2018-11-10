@@ -1,0 +1,19 @@
+.home-view__welcome {
+  margin: auto;
+  text-align: center;
+  color: rgb(228, 228, 228);
+
+}
+
+.home-view__paragraph {
+  font-size: 1em;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+
+
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
